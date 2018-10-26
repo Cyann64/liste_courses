@@ -1,0 +1,7 @@
+<p>
+  <input type="checkbox">
+  {{ nom }}
+  <input type="number" min="0" max="99" step="1" value="1" [(ngModel)]="quantite">
+  P.U. <input type="text" class="input-sm" [(ngModel)]="prix"> €
+  Total = {{ quantite * prix }}  €
+</p>
