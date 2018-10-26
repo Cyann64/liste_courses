@@ -1,7 +1,7 @@
-<p>
-  <input type="checkbox">
-  {{ nom }}
-  <input type="number" min="0" max="99" step="1" value="1" [(ngModel)]="quantite">
-  P.U. <input type="text" class="input-sm" [(ngModel)]="prix"> €
-  Total = {{ quantite * prix }}  €
-</p>
+<div class="row">
+  <div class="col-sm-1"><input type="checkbox"></div>
+  <div class="col-sm-4">{{ nom }}</div>
+  <div class="col-sm-2"><input type="number" min="0" max="99" step="1" value="1" [(ngModel)]="quantite"></div>
+  <div class="col-sm-2">P.U. <input type="text" [(ngModel)]="prix" /> €</div>
+  <div class="col-sm-2">Total = {{ quantite * prix }}  € </div>
+</div>
