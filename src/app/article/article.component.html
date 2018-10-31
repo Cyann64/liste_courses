@@ -1,7 +1,8 @@
-<div class="row">
-  <div class="col-sm-1"><input type="checkbox"></div>
-  <div class="col-sm-4">{{ nom }}</div>
-  <div class="col-sm-2"><input type="number" min="0" max="99" step="1" value="1" [(ngModel)]="quantite"></div>
-  <div class="col-sm-2">P.U. <input type="text" [(ngModel)]="prix" /> €</div>
-  <div class="col-sm-2">Total = {{ quantite * prix }}  € </div>
+<div class="row ">
+  <div class="col-xs-1"><span class="border border-success"><input type="checkbox"></span></div>
+  <div class="col-xs-2">{{ nom }} {{ quantite }}</div>
+  <div class="col-xs-2"><input type="number" min="0" max="99" step="1" value="1" [(ngModel)]="quantite">{{ quantite }}</div>
+  <div class="col-xs-2"><input type="text" [(ngModel)]="prix" id="number" [value]="prix" /> €</div>
+  <div class="col-xs-2">{{ (quantite * prix).toFixed(2) }} € </div>
 </div>
+
